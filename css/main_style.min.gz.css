@@ -8841,7 +8841,7 @@ input[type=text]::-ms-reveal {  display: none; width : 0; height: 0; }
   /*style home*/
   .cat-boxes1-container ul li, .cat-boxes2-container ul li{ width: 100%;}
   .top-picks-content .bx-viewport{ max-width: 180px;}
-  .carousel-control{ background: url("http://www.lionkingflooring.com.au/ebay/images/carousel-control-mb.png"); width: 24px; height: 44px; }
+  /*.carousel-control{ background: url("http://www.lionkingflooring.com.au/ebay/images/carousel-control-mb.png"); width: 24px; height: 44px; }*/
   .carousel-control.right{background-position: 0px 0px; margin-left: 10px;}
   .carousel-control.left{background-position: 0px -54px; margin-left: -34px;}
   h3.block-title span{ font-size: 18px; padding: 0 12px;}
