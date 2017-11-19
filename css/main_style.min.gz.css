@@ -6627,8 +6627,10 @@ left: 0; margin-top: -1px; padding: 10px 15px;}
 {
   display: none
 }
+
 .carousel-control
-{ background-image: url("http://www.lionkingflooring.com.au/ebay/images/images/carousel-control.png") ;
+{
+  /* background-image: url("http://www.lionkingflooring.com.au/ebay/images/images/carousel-control.png") ; */
   left:unset;
   width: 33px;
   height: 58px;
@@ -6636,7 +6638,7 @@ left: 0; margin-top: -1px; padding: 10px 15px;}
   top: 50%;
   margin-top: -29px;
   position: absolute
-}
+} 
 .carousel-control.left 
 {
   background-position: 0px -68px;
