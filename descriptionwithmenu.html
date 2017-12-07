@@ -1,4 +1,4 @@
-<font rwr="1" size="4" style="font-family:Arial">
+<font rwr="1" size="4" style="font-family:Arial"><font rwr="1" size="4" style="font-family:Arial">
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1,user-scalable=0">
@@ -7,314 +7,83 @@
 <link href="https://fonts.googleapis.com/css?family=Spinnaker" rel="stylesheet" type="text/css">
 <link href="https://fonts.googleapis.com/css?family=Roboto:400,700" rel="stylesheet" type="text/css">
 <link href="https://fonts.googleapis.com/css?family=Cantata+One" rel="stylesheet">
-<style type="text/css">
-/* CSS Document */
-
-@import url(https://fonts.googleapis.com/css?family=Open+Sans);
-@import url(https://fonts.googleapis.com/css?family=Bree+Serif);
-
-#container {
-	margin: 0 auto;
-	max-width: 890px;
-}
-
-.toggle,
-[id^=drop] {
-	display: none;
-}
-
-/* Giving a background-color to the nav container. */
-nav { 
-	margin:0;
-	padding: 0;
-	float:left;
-}
-
-#logo {
-	display: block;
-	padding: 0 30px;
-	float: left;
-	font-size:20px;
-	line-height: 60px;
-}
-
-/* Since we'll have the "ul li" "float:left"
- * we need to add a clear after the container. */
-
-nav:after {
-	content:"";
-	display:table;
-	clear:both;
-}
-
-/* Removing padding, margin and "list-style" from the "ul",
- * and adding "position:reltive" */
-nav ul {
-	float: right;
-	padding:0;
-	margin:0;
-	list-style: none;
-	position: relative;
-	}
-	
-/* Positioning the navigation items inline */
-nav ul li {
-	margin: 0px;
-	display:inline-block;
-	float: left;
-	background-color: #11394f;
-	}
-
-/* Styling the links */
-nav a {
-	display:block;
-	padding:14px 20px;	
-	color:#e9d33f;
-	font-size:17px;
-	text-decoration:none;
-}
-
-
-/*nav ul li ul li:hover { background: #000000; }*/
-
-/* Background color change on Hover */
-nav a:hover { 
-	background-color: #000000; 
-}
-
-/* Hide Dropdowns by Default
- * and giving it a position of absolute */
-nav ul ul {
-	display: none;
-	position: absolute; 
-	/* has to be the same number as the "line-height" of "nav a" */
-	top: 60px; 
-}
-	
-/* Display Dropdowns on Hover */
-nav ul li:hover > ul {
-	display:inherit;
-}
-	
-/* Fisrt Tier Dropdown */
-nav ul ul li {
-	width:400px;
-	float:none;
-	display:list-item;
-	position: relative;
-}
-
-/* Second, Third and more Tiers	
- * We move the 2nd and 3rd etc tier dropdowns to the left
- * by the amount of the width of the first tier.
-*/
-nav ul ul ul li {
-	position: relative;
-	top:-60px;
-	/* has to be the same number as the "width" of "nav ul ul li" */ 
-	left:170px; 
-}
-
-	
-/* Change ' +' in order to change the Dropdown symbol */
-li > a:after { content:  ' +'; }
-li > a:only-child:after { content: ''; }
-
-
-/* Media Queries
---------------------------------------------- */
-
-@media all and (max-width : 768px) {
-
-	#logo {
-		display: block;
-		padding: 0;
-		width: 100%;
-		text-align: center;
-		float: none;
-	}
-
-	nav {
-		margin: 0;
-		float:left;
-	}
-
-	/* Hide the navigation menu by default */
-	/* Also hide the  */
-	.toggle + a,
-	.menu {
-		display: none;
-	}
-
-	/* Stylinf the toggle lable */
-	.toggle {
-		display: block;
-		background-color: #11394f;
-		padding:14px 20px;	
-		color:#e9d33f;
-		font-size:17px;
-		text-decoration:none;
-		border:none;
-		
-	}
-
-	.toggle:hover {
-		background-color: none;
-	}
-
-	/* Display Dropdown when clicked on Parent Lable */
-	[id^=drop]:checked + ul {
-		display: block;
-	}
-
-	/* Change menu item's width to 100% */
-	nav ul li {
-		display: block;
-		width: 100%;
-		}
-
-	nav ul ul .toggle,
-	nav ul ul a {
-		padding: 0 40px;
-	}
-
-	nav ul ul ul a {
-		padding: 0 80px;
-	}
-
-	nav a:hover,
- 	nav ul ul ul a {
-		background-color: none;
-	}
-  
-	nav ul li ul li .toggle,
-	nav ul ul a,
-  nav ul ul ul a{
-		padding:14px 20px;	
-		color:#e9d33f;
-		font-size:17px; 
-	}
-  
-  
-	nav ul li ul li .toggle,
-	nav ul ul a {
-		background-color: none; 
-	}
-
-	/* Hide Dropdowns by Default */
-	nav ul ul {
-		float: none;
-		position:static;
-		color: #ffffff;
-		/* has to be the same number as the "line-height" of "nav a" */
-	}
-		
-	/* Hide menus on hover */
-	nav ul ul li:hover > ul,
-	nav ul li:hover > ul {
-		display: none;
-	}
-		
-	/* Fisrt Tier Dropdown */
-	nav ul ul li {
-		display: block;
-		width: 100%;
-	}
-
-	nav ul ul ul li {
-		position: static;
-		/* has to be the same number as the "width" of "nav ul ul li" */ 
-
-	}
-
-}
-
-@media all and (max-width : 330px) {
-
-	nav ul li {
-		display:block;
-		width: 94%;
-	}
-}
-
-</style>
 <div class="wrappage">
 <div class="header-container">
 <div class="container">
 <div class="header-content">
 <span class="icon-menu-mb"></span>
 <a class="logo-content" href="http://stores.ebay.com.au/Lion-King-Flooring-Pty-Ltd" title="Lion King Flooring eBay official store">
-<img src="http://www.lionkingflooring.com.au/ebay/images/logo_lkf_small.jpg" alt="lionkingflooring eBay official store" />
+<img src="http://www.lionkingflooring.com.au/ebay/images/logo_lkf_small.jpg" alt="lionkingflooring eBay official store">
 </a>
 </div>
 </div>
 </div>
- <nav>
+&nbsp;<nav>
 <label for="drop" class="toggle" id="menu" style="width: 100vw;">
 <span style="vertical-align:center;color:#e9d33f">Menu</span>
 </label>
-<input type="checkbox" id="drop" />
+<input type="checkbox" id="drop">
 <ul class="menu">
 <li style="border-bottom:1px solid #fff">
 <label for="drop-1" class="toggle">Samples +</label>
 <a href="#">Samples</a>
-<input type="checkbox" id="drop-1"/>
+<input type="checkbox" id="drop-1">
 <ul style="z-index: 999;">
-<li><a href="http://stores.ebay.com.au/Lion-King-Flooring-Pty-Ltd/Laminate-Samples-/_i.html?_fsub=5014702013&_sid=215813583&_trksid=p4634.c0.m322">Laminate flooring</a></li>
-<li> <a style="margin-left: 40px;" href="http://stores.ebay.com.au/Lion-King-Flooring-Pty-Ltd/12mm-Country-Classics-Samples-/_i.html?_fsub=2707625013&_sid=215813583&_trksid=p4634.c0.m322">- 12mm Country Classics™ Samples</a></li>
-<li> <a style="margin-left: 40px;" href="http://stores.ebay.com.au/Lion-King-Flooring-Pty-Ltd/12mm-Highland-Ridge-Samples-/_i.html?_fsub=4836831013&_sid=215813583&_trksid=p4634.c0.m322">- 12mm Highland Ridge™ Samples </a></li>
-<li> <a style="margin-left: 40px;" href="http://stores.ebay.com.au/Lion-King-Flooring-Pty-Ltd/Long-Board-/_i.html?_fsub=9952335013&_sid=215813583&_trksid=p4634.c0.m322">- Long Board</a></li>
-<li> <a href="http://stores.ebay.com.au/Lion-King-Flooring-Pty-Ltd/WPC-Vinyl-Samples-/_i.html?_fsub=54610926013&_sid=215813583&_trksid=p4634.c0.m322">WPC Vinyl Samples</a></li>
-<li> <a href="http://stores.ebay.com.au/Lion-King-Flooring-Pty-Ltd/Maganda-Bamboo-Samples-/_i.html?_fsub=5052820013&_sid=215813583&_trksid=p4634.c0.m322">Maganda™ Bamboo Samples</a></li>
-<li> <a href="http://stores.ebay.com.au/Lion-King-Flooring-Pty-Ltd/Engineered-Flooring-Samples-/_i.html?_fsub=58614158013&_sid=215813583&_trksid=p4634.c0.m322">Engineered Flooring Samples</a></li>
-<li> <a style="margin-left: 40px;" href="http://stores.ebay.com.au/Lion-King-Flooring-Pty-Ltd/GrandOak-Samples-/_i.html?_fsub=58614351013&_sid=215813583&_trksid=p4634.c0.m322">- GrandOak™ Samples</a></li>
-<li> <a style="margin-left: 40px;" href="http://stores.ebay.com.au/Lion-King-Flooring-Pty-Ltd/ImperialOak-Samples-/_i.html?_fsub=6638099013&_sid=215813583&_trksid=p4634.c0.m322">- ImperialOak™ Samples</a></li>
-<li> <a href="http://stores.ebay.com.au/Lion-King-Flooring-Pty-Ltd/Outdoor-Flooring-Samples-/_i.html?_fsub=12684326013&_sid=215813583&_trksid=p4634.c0.m322">Outdoor Flooring Samples</a></li>
+<li><a href="http://stores.ebay.com.au/Lion-King-Flooring-Pty-Ltd/Laminate-Samples-/_i.html?_fsub=5014702013&amp;_sid=215813583&amp;_trksid=p4634.c0.m322">Laminate flooring</a></li>
+<li> <a style="margin-left: 40px;" href="http://stores.ebay.com.au/Lion-King-Flooring-Pty-Ltd/12mm-Country-Classics-Samples-/_i.html?_fsub=2707625013&amp;_sid=215813583&amp;_trksid=p4634.c0.m322">- 12mm Country Classics™ Samples</a></li>
+<li> <a style="margin-left: 40px;" href="http://stores.ebay.com.au/Lion-King-Flooring-Pty-Ltd/12mm-Highland-Ridge-Samples-/_i.html?_fsub=4836831013&amp;_sid=215813583&amp;_trksid=p4634.c0.m322">- 12mm Highland Ridge™ Samples </a></li>
+<li> <a style="margin-left: 40px;" href="http://stores.ebay.com.au/Lion-King-Flooring-Pty-Ltd/Long-Board-/_i.html?_fsub=9952335013&amp;_sid=215813583&amp;_trksid=p4634.c0.m322">- Long Board</a></li>
+<li> <a href="http://stores.ebay.com.au/Lion-King-Flooring-Pty-Ltd/WPC-Vinyl-Samples-/_i.html?_fsub=54610926013&amp;_sid=215813583&amp;_trksid=p4634.c0.m322">WPC Vinyl Samples</a></li>
+<li> <a href="http://stores.ebay.com.au/Lion-King-Flooring-Pty-Ltd/Maganda-Bamboo-Samples-/_i.html?_fsub=5052820013&amp;_sid=215813583&amp;_trksid=p4634.c0.m322">Maganda™ Bamboo Samples</a></li>
+<li> <a href="http://stores.ebay.com.au/Lion-King-Flooring-Pty-Ltd/Engineered-Flooring-Samples-/_i.html?_fsub=58614158013&amp;_sid=215813583&amp;_trksid=p4634.c0.m322">Engineered Flooring Samples</a></li>
+<li> <a style="margin-left: 40px;" href="http://stores.ebay.com.au/Lion-King-Flooring-Pty-Ltd/GrandOak-Samples-/_i.html?_fsub=58614351013&amp;_sid=215813583&amp;_trksid=p4634.c0.m322">- GrandOak™ Samples</a></li>
+<li> <a style="margin-left: 40px;" href="http://stores.ebay.com.au/Lion-King-Flooring-Pty-Ltd/ImperialOak-Samples-/_i.html?_fsub=6638099013&amp;_sid=215813583&amp;_trksid=p4634.c0.m322">- ImperialOak™ Samples</a></li>
+<li> <a href="http://stores.ebay.com.au/Lion-King-Flooring-Pty-Ltd/Outdoor-Flooring-Samples-/_i.html?_fsub=12684326013&amp;_sid=215813583&amp;_trksid=p4634.c0.m322">Outdoor Flooring Samples</a></li>
 </ul>
 </li>
 <li style="border-bottom:1px solid #fff">
 <label for="drop-2" class="toggle">Laminate Flooring +</label>
 <a href="#">Laminate Flooring</a>
-<input type="checkbox" id="drop-2"/>
+<input type="checkbox" id="drop-2">
 <ul style="z-index: 999;">
-<li ><a href="http://stores.ebay.com.au/Lion-King-Flooring-Pty-Ltd/12mm-Country-Classics-Samples-/_i.html?_fsub=2707625013&_sid=215813583&_trksid=p4634.c0.m322">Country Classics™ 12mm Laminate Flooring</a></li>
-<li > <a href="http://stores.ebay.com.au/Lion-King-Flooring-Pty-Ltd/Monarch-Laminate-AC4-E0-/_i.html?_fsub=58707678013&_sid=215813583&_trksid=p4634.c0.m322">Monarch™ 12mm AC4 Laminate Flooring</a></li>
-<li > <a href="http://stores.ebay.com.au/Lion-King-Flooring-Pty-Ltd/12mm-Highland-Ridge-/_i.html?_fsub=4836830013&_sid=215813583&_trksid=p4634.c0.m322">Highland Ridge™ Premium Laminate Flooring</a></li>
-<li ><a href="http://stores.ebay.com.au/Lion-King-Flooring-Pty-Ltd/12mm-Highland-Ridge-Longboards-/_i.html?_fsub=9849773013&_sid=215813583&_trksid=p4634.c0.m322">Highland Ridge™ Premium Laminate Longboards</a></li>
-<li ><a href="http://stores.ebay.com.au/Lion-King-Flooring-Pty-Ltd/8mm-German-Laminate-/_i.html?_fsub=52771126013&_sid=215813583&_trksid=p4634.c0.m322">Krono Original™ German Made 8mm Laminate Flooring</a></li>
+<li><a href="http://stores.ebay.com.au/Lion-King-Flooring-Pty-Ltd/12mm-Country-Classics-Samples-/_i.html?_fsub=2707625013&amp;_sid=215813583&amp;_trksid=p4634.c0.m322">Country Classics™ 12mm Laminate Flooring</a></li>
+<li> <a href="http://stores.ebay.com.au/Lion-King-Flooring-Pty-Ltd/Monarch-Laminate-AC4-E0-/_i.html?_fsub=58707678013&amp;_sid=215813583&amp;_trksid=p4634.c0.m322">Monarch™ 12mm AC4 Laminate Flooring</a></li>
+<li> <a href="http://stores.ebay.com.au/Lion-King-Flooring-Pty-Ltd/12mm-Highland-Ridge-/_i.html?_fsub=4836830013&amp;_sid=215813583&amp;_trksid=p4634.c0.m322">Highland Ridge™ Premium Laminate Flooring</a></li>
+<li><a href="http://stores.ebay.com.au/Lion-King-Flooring-Pty-Ltd/12mm-Highland-Ridge-Longboards-/_i.html?_fsub=9849773013&amp;_sid=215813583&amp;_trksid=p4634.c0.m322">Highland Ridge™ Premium Laminate Longboards</a></li>
+<li><a href="http://stores.ebay.com.au/Lion-King-Flooring-Pty-Ltd/8mm-German-Laminate-/_i.html?_fsub=52771126013&amp;_sid=215813583&amp;_trksid=p4634.c0.m322">Krono Original™ German Made 8mm Laminate Flooring</a></li>
 </ul>
 </li>
-<li style="border-bottom:1px solid #fff"><a href="http://stores.ebay.com.au/Lion-King-Flooring-Pty-Ltd/WPC-Vinyl-Samples-/_i.html?_fsub=54610926013&_sid=215813583&_trksid=p4634.c0.m322">WPC Water Proof Flooring</a></li>
+<li style="border-bottom:1px solid #fff"><a href="http://stores.ebay.com.au/Lion-King-Flooring-Pty-Ltd/WPC-Vinyl-Samples-/_i.html?_fsub=54610926013&amp;_sid=215813583&amp;_trksid=p4634.c0.m322">WPC Water Proof Flooring</a></li>
 <li style="border-bottom:1px solid #fff">
 <label for="drop-3" class="toggle">Bamboo Flooring +</label>
 <a href="#">Bamboo Flooring</a>
-<input type="checkbox" id="drop-3"/>
+<input type="checkbox" id="drop-3">
 <ul style="z-index: 999;">
-<li><a href="http://stores.ebay.com.au/Lion-King-Flooring-Pty-Ltd/Maganda-Strand-Woven-Bamboo-/_i.html?_fsub=5031851013&_sid=215813583&_trksid=p4634.c0.m322">Maganda™ Strand Woven Bamboo Flooring</a></li>
+<li><a href="http://stores.ebay.com.au/Lion-King-Flooring-Pty-Ltd/Maganda-Strand-Woven-Bamboo-/_i.html?_fsub=5031851013&amp;_sid=215813583&amp;_trksid=p4634.c0.m322">Maganda™ Strand Woven Bamboo Flooring</a></li>
 </ul>
 </li>
 <li style="border-bottom:1px solid #fff">
 <label for="drop-4" class="toggle">Engineered Timber Flooring +</label>
 <a href="#">Engineered Timber Flooring</a>
-<input type="checkbox" id="drop-4"/>
+<input type="checkbox" id="drop-4">
 <ul style="z-index: 999;right:5">
-<li><a href="http://stores.ebay.com.au/Lion-King-Flooring-Pty-Ltd/ImperialOak-/_i.html?_fsub=5152281013&_sid=215813583&_trksid=p4634.c0.m322">ImperialOak™ Engineered Oak Timber Flooring</a></li>
-<li><a href="http://stores.ebay.com.au/Lion-King-Flooring-Pty-Ltd/GrandOak-Samples-/_i.html?_fsub=58614351013&_sid=215813583&_trksid=p4634.c0.m322">Grand Oak™ Engineered Oak Timber Flooring</a></li>
+<li><a href="http://stores.ebay.com.au/Lion-King-Flooring-Pty-Ltd/ImperialOak-/_i.html?_fsub=5152281013&amp;_sid=215813583&amp;_trksid=p4634.c0.m322">ImperialOak™ Engineered Oak Timber Flooring</a></li>
+<li><a href="http://stores.ebay.com.au/Lion-King-Flooring-Pty-Ltd/GrandOak-Samples-/_i.html?_fsub=58614351013&amp;_sid=215813583&amp;_trksid=p4634.c0.m322">Grand Oak™ Engineered Oak Timber Flooring</a></li>
 </ul>
 </li>
 <li style="border-bottom:1px solid #fff">
 <label for="drop-5" class="toggle">Other +</label>
 <a href="#">Other</a>
-<input type="checkbox" id="drop-5"/>
+<input type="checkbox" id="drop-5">
 <ul style="z-index: 999;right:5">
-<li ><a class="aMenuSub2" href="http://stores.ebay.com.au/Lion-King-Flooring-Pty-Ltd/Solid-Timber-Flooring-/_i.html?_fsub=4932203013&_sid=215813583&_trksid=p4634.c0.m322">Solid Timber Flooring</a></li>
-<li ><a class="aMenuSub2" href="http://stores.ebay.com.au/Lion-King-Flooring-Pty-Ltd/Artificial-Turf-/_i.html?_fsub=4933237013&_sid=215813583&_trksid=p4634.c0.m322">Artificial Truf</a></li>
-<li ><a class="aMenuSub2" href="http://stores.ebay.com.au/Lion-King-Flooring-Pty-Ltd/Outdoor-Flooring-Samples-/_i.html?_fsub=12684326013&_sid=215813583&_trksid=p4634.c0.m322">Outdoor flooring</a></li>
-<li ><a class="aMenuSub2" href="http://stores.ebay.com.au/Lion-King-Flooring-Pty-Ltd/Staircase-Accessories-/_i.html?_fsub=4932881013&_sid=215813583&_trksid=p4634.c0.m322">Staircase Accessories</a></li>
-<li ><a class="aMenuSub2" href="http://stores.ebay.com.au/Lion-King-Flooring-Pty-Ltd/Trims-/_i.html?_fsub=10876507013&_sid=215813583&_trksid=p4634.c0.m322">Trims and Edging</a></li>
-<li ><a class="aMenuSub2" href="http://stores.ebay.com.au/Lion-King-Flooring-Pty-Ltd/Touch-Up-Crayon-/_i.html?_fsub=12967285013&_sid=215813583&_trksid=p4634.c0.m322">Touch Up Crayon</a></li>
-<li ><a class="aMenuSub2" href="http://stores.ebay.com.au/Lion-King-Flooring-Pty-Ltd/Decoration-Stickers-/_i.html?_fsub=33823707013&_sid=215813583&_trksid=p4634.c0.m322">Decoration Stickers</a></li>
-<li><a class="aMenuSub2" href="http://stores.ebay.com.au/Lion-King-Flooring-Pty-Ltd/Floor-Protectors-/_i.html?_fsub=14476238013&_sid=215813583&_trksid=p4634.c0.m322">Floor Protectors</a></li>
+<li><a class="aMenuSub2" href="http://stores.ebay.com.au/Lion-King-Flooring-Pty-Ltd/Solid-Timber-Flooring-/_i.html?_fsub=4932203013&amp;_sid=215813583&amp;_trksid=p4634.c0.m322">Solid Timber Flooring</a></li>
+<li><a class="aMenuSub2" href="http://stores.ebay.com.au/Lion-King-Flooring-Pty-Ltd/Artificial-Turf-/_i.html?_fsub=4933237013&amp;_sid=215813583&amp;_trksid=p4634.c0.m322">Artificial Truf</a></li>
+<li><a class="aMenuSub2" href="http://stores.ebay.com.au/Lion-King-Flooring-Pty-Ltd/Outdoor-Flooring-Samples-/_i.html?_fsub=12684326013&amp;_sid=215813583&amp;_trksid=p4634.c0.m322">Outdoor flooring</a></li>
+<li><a class="aMenuSub2" href="http://stores.ebay.com.au/Lion-King-Flooring-Pty-Ltd/Staircase-Accessories-/_i.html?_fsub=4932881013&amp;_sid=215813583&amp;_trksid=p4634.c0.m322">Staircase Accessories</a></li>
+<li><a class="aMenuSub2" href="http://stores.ebay.com.au/Lion-King-Flooring-Pty-Ltd/Trims-/_i.html?_fsub=10876507013&amp;_sid=215813583&amp;_trksid=p4634.c0.m322">Trims and Edging</a></li>
+<li><a class="aMenuSub2" href="http://stores.ebay.com.au/Lion-King-Flooring-Pty-Ltd/Touch-Up-Crayon-/_i.html?_fsub=12967285013&amp;_sid=215813583&amp;_trksid=p4634.c0.m322">Touch Up Crayon</a></li>
+<li><a class="aMenuSub2" href="http://stores.ebay.com.au/Lion-King-Flooring-Pty-Ltd/Decoration-Stickers-/_i.html?_fsub=33823707013&amp;_sid=215813583&amp;_trksid=p4634.c0.m322">Decoration Stickers</a></li>
+<li><a class="aMenuSub2" href="http://stores.ebay.com.au/Lion-King-Flooring-Pty-Ltd/Floor-Protectors-/_i.html?_fsub=14476238013&amp;_sid=215813583&amp;_trksid=p4634.c0.m322">Floor Protectors</a></li>
 </ul>
 </li>
 </ul>
@@ -354,8 +123,6 @@ This trim is the most widely used trim and is ideal for areas where our flooring
 </table>
 <div class="product-shop-container">
 <div class="tabs">
-
-
 <main>
 <input id="tab1" type="checkbox" name="tabs" checked="">
 <label for="tab1">More information</label>
@@ -443,4 +210,4 @@ Please contact us for a freight quote before committing to purchase.
 </div>
 </div>
 </div>
-</div></div></font>
+</div></font></font>
