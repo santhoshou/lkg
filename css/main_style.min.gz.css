@@ -755,13 +755,6 @@ pre code {
   }
 }
 
-@media (max-width: 480px) {
-  .container {
-     float: left;
-  }
-  .menu-container{width: 65%}
-  .menu-content{width: 65%}
-}
 
 .container-fluid {
   padding-right: 10px;
@@ -7681,7 +7674,7 @@ table.gallery table.fixed{margin:0;}
 {
   border: 0
 }
-.pagewidth td#CentralArea div.dynpg table.pager{ float: left;}
+.pagewidth td#CentralArea div.dynpg table.pager{ float: right;}
 .pagewidth .ctrlbr
 {
   padding: 0;
@@ -8775,7 +8768,7 @@ input[type=text]::-ms-reveal {  display: none; width : 0; height: 0; }
   @media (max-width: 736px) 
 { .main-bottom-container .main-bottom-content a span{ font-size: 11px;}
   /*style pagewidth*/
-  .pagewidth .stBadge{ display: inline; max-width: auto;}
+  .pagewidth .stBadge{ display: none; max-width: auto;}
   /*style home*/
   .pagewidth.intro-page .stBadge{ display: none;}
   .top-picks-content .bx-viewport{ max-width: 415px;}
@@ -8813,7 +8806,7 @@ input[type=text]::-ms-reveal {  display: none; width : 0; height: 0; }
   .icon-menu-mb{margin: 8px 30px 0 0;}
   .header-container .header-content .logo-content{ margin: 0;}
   .search-container{ width: 100%; margin: 19px 0 0; }
-  .search-content{ width: 90vw;float:left }
+  .search-content{ width: 100%;}
   .search-content .v4sbox{ width: 95%;}
   .main-bottom-container{ margin-top: 0;}
   .main-bottom-container .main-bottom-content .col-xs-6{ width: 50%;}
@@ -8831,7 +8824,7 @@ input[type=text]::-ms-reveal {  display: none; width : 0; height: 0; }
    .search-content .v5sbox{ float: right; width: 32px;}
   /*style store*/
   .pagewidth div.r3_cm div.rs_box .pview.rs-pview table, .pagewidth div.r3_cm div.rs_box .pview.rs-pview tbody, .pagewidth div.r3_cm div.rs_box .pview.rs-pview tr,
-  .pagewidth div.r3_cm div.rs_box .pview.rs-pview td{ display: block; height: auto; width: 95%;}
+  .pagewidth div.r3_cm div.rs_box .pview.rs-pview td{ display: block; height: auto; width: 100%;}
   .pagewidth .details span.ship, .pagewidth table.gallery table.fixed div.time2 span{ position: static;}
   .pagewidth table.gallery div.ttl, .pagewidth table.gallery div.subtitle{ height: auto;}
   .pagewidth table.gallery td.bin-content-left{ float: left; width: auto !important;}
